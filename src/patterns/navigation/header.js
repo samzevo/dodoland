@@ -1,5 +1,8 @@
 import React from 'react'
+
+import Row from '../../layouts/row'
 import { Logo, Button, Link } from '../../components'
+import {Birdly_logo} from '../../assets/assets'
 
 function Header(props) {
 	const renderlinks = (
@@ -14,11 +17,11 @@ function Header(props) {
 		</div>
 	)
 	return (
-		<div>
-			<Logo />
+		<Row>
+			<Logo image={Birdly_logo} />
 			{renderlinks}
 			<Button />
-		</div>
+		</Row>
 	)
 }
 

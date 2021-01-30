@@ -19,13 +19,13 @@ function App() {
 			<Router>
 				<Header />
 				<Switch>
-					<Route to="/" exact component={Home}/>
-					<Route to="/birds" exact component={Birds}/>
-					<Route to="/shop" exact component={Shop}/>
-					<Route to="/nesting" exact component={Nesting}/>
-					<Route to="/earn" exact component={Earn}/>
-					<Route to="/feeding" exact component={Feeding}/>
-					<Route to="/upcoming" exact component={Upcoming}/>
+					<Route path="/" exact component={Home}/>
+					<Route path="/birds" exact component={Birds}/>
+					<Route path="/shop" exact component={Shop}/>
+					<Route path="/nesting" exact component={Nesting}/>
+					<Route path="/earn" exact component={Earn}/>
+					<Route path="/feeding" exact component={Feeding}/>
+					<Route path="/upcoming" exact component={Upcoming}/>
 				</Switch>
 			</Router>
 		</>
