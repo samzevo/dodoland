@@ -1,22 +1,24 @@
 import React from 'react'
 import { Logo } from '../../components'
-import Row from '../../layouts/row'
-import{Open_sealogo,Facebook,Instagram,Twitter} from '../../assets/assets'
-import Column from '../../layouts/column'
+import { Open_sealogo, Facebook, Instagram, Twitter } from '../../assets/assets'
+import { Row, Column } from '../../layouts/index'
 
 function Footer(props) {
-	
 	const renderSocialMediaIcons = (
 		<div>
-			<Logo image={Facebook}/>
-			<Logo image={Instagram}/>
-			<Logo image={Twitter}/>
+			<Logo image={Facebook} />
+			<Logo image={Instagram} />
+			<Logo image={Twitter} />
 		</div>
 	)
 
 	return (
 		<Row>
-			<Logo image={Open_sealogo}/>			
+			<Column>
+				<span>Buy on</span>
+				<Logo image={Open_sealogo} />
+			</Column>
+
 			{renderSocialMediaIcons}
 		</Row>
 	)
