@@ -1,9 +1,9 @@
 import React from 'react'
-import Layouts from '../styles/sheets/layouts'
+import {column} from '../styles/sheets/layouts/'
 
 const Column = (props) => {
     return (
-        <div style={Layouts.column}>
+        <div style={column.default}>
             {props.children}           
         </div>
     )
