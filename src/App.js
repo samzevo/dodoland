@@ -10,7 +10,7 @@ function App() {
 		background: 'grey',
 	}
 	return (
-		<>
+		
 			<Router>
 				<Header />
 				<Switch>
@@ -24,7 +24,7 @@ function App() {
 				</Switch>
 				<Footer />
 			</Router>
-		</>
+		
 	)
 }
 
