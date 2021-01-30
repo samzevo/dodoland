@@ -1,3 +1,5 @@
 import logo from './logo'
+import link from './link'
+import button from './button'
 
-export { logo }
+export { logo, link, button }
