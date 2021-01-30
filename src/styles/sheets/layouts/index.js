@@ -2,6 +2,7 @@
 const Layouts={
     containerDefault:{
         margin:'10px',
+        
     },
     sectionDefault:{
         width:'100%',

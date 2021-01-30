@@ -4,8 +4,7 @@ import Layouts from '../styles/sheets/layouts'
 const Column = (props) => {
     return (
         <div style={Layouts.column}>
-            {props.children}
-            
+            {props.children}           
         </div>
     )
 }

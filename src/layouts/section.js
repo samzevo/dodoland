@@ -1,14 +1,11 @@
+import React from 'react'
 
-
-function Sec() {
-	const style = {
-		background: 'grey',
-	}
-	return (
-		<div>
-			<Router></Router>
-		</div>
-	)
+const Section = () => {
+    return (
+        <div>
+            
+        </div>
+    )
 }
 
-export default Sec
+export default Section
