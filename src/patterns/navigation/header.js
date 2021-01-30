@@ -1,6 +1,6 @@
 import React from 'react'
 import { Logo, Button, Link } from '../../components'
-import { Birdly_logo } from '../../assets'
+import logo from '../../assets/logos/logo.svg'
 import Section from '../../layouts/section'
 import Row from '../../layouts/row'
 
@@ -14,9 +14,16 @@ function Header(props) {
 		</div>
 	)
 	return (
-		<Section style={{ ...section.default, height: '10vh' }}>
+		<Section
+			style={{
+				...section.default,
+				height: '10vh',
+				position: 'absolute',
+				marginLeft: '16px',
+				marginRight: '16px',
+			}}>
 			<Row>
-				<Logo />
+				<Logo src={logo} />
 				{renderlinks}
 				<Button />
 			</Row>
