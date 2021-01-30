@@ -2,7 +2,7 @@ import React from 'react'
 
 import Row from '../../layouts/row'
 import { Logo, Button, Link } from '../../components'
-import {Birdly_logo} from '../../assets/assets'
+import {Birdly_logo} from '../../assets'
 
 function Header(props) {
 	const renderlinks = (
