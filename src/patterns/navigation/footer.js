@@ -1,16 +1,21 @@
 import React from 'react'
 import { Logo } from '../../components'
-import { Open_sealogo, Facebook, Instagram, Twitter } from '../../assets/assets'
-import { Section, Row, Container } from '../../layouts'
-import { section } from '../../styles/sheets/layouts'
-
+import {section} from '../../styles/sheets/layouts/'
+import {Section} from '../../layouts/' 
+import { Row, Column,Conta } from '../../layouts/index'
+import {Images} from '../../data/data'
+import {Open_sealogo} from '../../assets/assets'
 function Footer(props) {
 	const renderSocialMediaIcons = (
-		<Row>
-			<Logo image={Facebook} />
-			<Logo image={Instagram} />
-			<Logo image={Twitter} />
-		</Row>
+		<div>
+			{
+				Images.map((image) =>(
+					<Logo  key={image.id}
+						src={image.src}
+					/>
+				))
+			}
+		</div>
 	)
 
 	return (
@@ -24,7 +29,8 @@ function Footer(props) {
 				alignItems: 'center',
 				margin: 32,
 			}}>
-			<Logo image={Open_sealogo} />
+			<Column ><span>Buy on</span><Logo src={Open_sealogo} /></Column>
+			
 			{renderSocialMediaIcons}
 		</Section>
 	)
