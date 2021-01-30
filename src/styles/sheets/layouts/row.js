@@ -1,5 +1,5 @@
 
-export const Row={
+const row={
     default:{
         display:'flex',
         flexDirection:'row',
@@ -7,3 +7,5 @@ export const Row={
         alignItems:'center',
     },
 }
+
+export default row;
