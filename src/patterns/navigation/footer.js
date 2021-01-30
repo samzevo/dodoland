@@ -1,7 +1,7 @@
 import React from 'react'
 import { Logo } from '../../components'
 import { Open_sealogo, Facebook, Instagram, Twitter } from '../../assets/assets'
-import { Row, Column,Conta } from '../../layouts/index'
+import { Row, Column,Container } from '../../layouts/index'
 
 function Footer(props) {
 	const renderSocialMediaIcons = (
@@ -13,10 +13,10 @@ function Footer(props) {
 	)
 
 	return (
-		<Row>
+		<Container>
 				<Logo image={Open_sealogo} />
 				{renderSocialMediaIcons}
-		</Row>
+		</Container>
 	)
 }
 
