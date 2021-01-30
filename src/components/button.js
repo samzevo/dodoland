@@ -1,5 +1,5 @@
 import React from 'react'
-import { button } from '../styles/sheets'
+import { button } from '../styles/sheets/components'
 
 function Button(props) {
 	return (
