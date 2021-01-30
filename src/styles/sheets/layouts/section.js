@@ -1,8 +1,9 @@
-
-const section={
-    default:{
-        width:'100%',
-    },
+const section = {
+	default: {
+		display: 'flex',
+		flexDirection: 'row',
+		width: '100%',
+	},
 }
 
-export default section;
+export default section

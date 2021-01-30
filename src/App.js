@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Header from './patterns/navigation/header'
+import { Header, Footer } from './patterns/navigation'
 import { Home, Earn, Feeding, Nesting, Shop, Upcoming, Birds } from './screens/'
-import Footer from './patterns/navigation/footer'
-import Backdrop from './layouts/index'
+import Backdrop from './layouts/backdrop'
+import  Button  from './components/button'
 
 function App() {
 	const style = {
@@ -13,7 +13,7 @@ function App() {
 		<React.Fragment>
 			<Router>
 				<Header />
-				<Backdrop />
+				<Backdrop/>
 				<Switch>
 					<Route path='/' exact component={Home} />
 					<Route path='/birds' exact component={Birds} />
@@ -25,6 +25,7 @@ function App() {
 				</Switch>
 				<Footer />
 			</Router>
+			
 		</React.Fragment>
 	)
 }

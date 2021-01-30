@@ -1,9 +1,13 @@
 import React from 'react'
+import  Button  from '../../components/button'
 
 const Home = () => {
     return (
         <div>
-            Home hi
+            Home 
+            <Button>
+                Use Wallet
+            </Button>
         </div>
     )
 }

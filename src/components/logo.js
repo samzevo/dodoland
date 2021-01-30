@@ -5,7 +5,7 @@ function Logo(props) {
 	return (
 		<img
 			style={props.style ? props.style : logo.default}
-			src={props.image}
+			src={props.src}
 			alt='logo'
 		/>
 	)

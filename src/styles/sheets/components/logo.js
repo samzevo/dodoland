@@ -1,6 +1,6 @@
 const logo = {
 	default: {
-		maxWidth: 100,
+		maxWidth: 240,
 	},
 }
 
