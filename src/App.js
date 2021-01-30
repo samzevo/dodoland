@@ -10,6 +10,7 @@ import Nesting from './screens/nesting/nesting'
 import Earn from './screens/earn/earn'
 import Feeding from './screens/feeding/feeding'
 import Upcoming from './screens/upcoming/upcoming'
+import Footer from './patterns/navigation/footer';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 					<Route path="/feeding" exact component={Feeding}/>
 					<Route path="/upcoming" exact component={Upcoming}/>
 				</Switch>
+				<Footer />
 			</Router>
 		</>
 	)

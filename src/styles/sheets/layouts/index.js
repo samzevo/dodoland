@@ -10,6 +10,7 @@ const Layouts={
         display:'flex',
         flexDirection:'row',
         justifyContent:'space-between',
+        alignItems:'center'
     },
     column:{
         display:'flex',
