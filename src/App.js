@@ -1,17 +1,19 @@
+import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
 import Header from './patterns/navigation/header'
 import { Home, Earn, Feeding, Nesting, Shop, Upcoming, Birds } from './screens/'
 import Footer from './patterns/navigation/footer'
+import Backdrop from './layouts/backdrop'
 
 function App() {
 	const style = {
 		background: 'grey',
 	}
 	return (
-		<>
+		<React.Fragment>
 			<Router>
 				<Header />
+				<Backdrop />
 				<Switch>
 					<Route path='/' exact component={Home} />
 					<Route path='/birds' exact component={Birds} />
@@ -23,7 +25,7 @@ function App() {
 				</Switch>
 				<Footer />
 			</Router>
-		</>
+		</React.Fragment>
 	)
 }
 
