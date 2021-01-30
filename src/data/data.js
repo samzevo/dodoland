@@ -1,3 +1,5 @@
+import {Facebook,Instagram,Twitter} from '../assets/assets'
+
 export const Links = [
 	{
 		id: 1,
@@ -34,4 +36,19 @@ export const Links = [
 		to: '/upcoming',
 		name: 'Upcoming',
 	},
+]
+
+export const Images=[
+	{
+		id:1,
+		src:Facebook
+	},
+	{
+		id:2,
+		src:Twitter
+	},
+	{
+		id:3,
+		src:Instagram
+	}
 ]
