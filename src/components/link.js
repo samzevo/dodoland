@@ -1,5 +1,5 @@
 import React from 'react'
-import { link } from '../styles/sheets'
+import { link } from '../styles/sheets/components'
 
 function Link(props) {
 	return (

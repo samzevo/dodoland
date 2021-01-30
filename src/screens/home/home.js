@@ -1,10 +1,6 @@
-import Logo from './components/logo'
-import { BrowserRouter as Router } from 'react-router-dom'
-import Button from './components/button'
-// import Navbar from './patterns/navigation/navbar'
+import React from 'react'
 
-import { logo } from './styles/sheets'
-import Header from './patterns/navigation/header'
+import {Header,Footer} from '../../patterns/navigation'
 
 function Home() {
 	
