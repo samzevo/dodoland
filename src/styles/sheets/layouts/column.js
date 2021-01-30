@@ -1,5 +1,4 @@
-
- const olumn ={
+const column ={
    default:{
     display:'flex',
     flexDirection:'column',
