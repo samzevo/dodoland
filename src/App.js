@@ -13,7 +13,7 @@ function App() {
 		<React.Fragment>
 			<Router>
 				<Header />
-				<Backdrop/>
+				{/* <Backdrop/> */}
 				<Switch>
 					<Route path='/' exact component={Home} />
 					<Route path='/birds' exact component={Birds} />
