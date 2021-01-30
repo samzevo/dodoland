@@ -1,13 +1,18 @@
 import React from 'react'
+
 import { Logo, Button, Link } from '../../components'
 import { Birdly_logo } from '../../assets'
 import Section from '../../layouts/section'
+import {Links} from '../../data/data'
 
 function Header(props) {
 	const renderlinks = (
 		<div>
-			<Link>Home</Link>
-			<Link>Birds</Link>
+			{
+				Links.map(link => (
+					<Link key={link.id} to={link.to}>{link.name}</Link>
+				))
+			}
 		</div>
 	)
 	return (

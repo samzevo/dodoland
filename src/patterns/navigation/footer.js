@@ -16,11 +16,7 @@ function Footer(props) {
 
 	return (
 		<Row>
-			<Column>
-			<span>Buy on</span>
-			<Logo image={Open_sealogo}/>
-			</Column>
-			
+			<Logo image={Open_sealogo}/>			
 			{renderSocialMediaIcons}
 		</Row>
 	)
