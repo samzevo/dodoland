@@ -2,7 +2,7 @@ const section = {
 	default: {
 		display: 'flex',
 		flexDirection: 'row',
-		width: '100%',
+		width: '100vw',
 	},
 }
 

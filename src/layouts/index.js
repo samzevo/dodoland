@@ -5,4 +5,4 @@ import Section from './section'
 import Tab from './tab'
 import Container from './container'
 
-export{Row,Column,Backdrop,Section,Tab,Container} 
+export { Row, Column, Container, Backdrop, Section, Tab }

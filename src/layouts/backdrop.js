@@ -7,11 +7,7 @@ const Backdrop = () => {
 		width: '100vw',
 		height: 'auto',
 	}
-	return (
-		<div style={Style}>
-			<img src={Background} />
-		</div>
-	)
+	return <img style={Style} src={Background} />
 }
 
 export default Backdrop
