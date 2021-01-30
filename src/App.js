@@ -1,13 +1,9 @@
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 
+import Backdrop from './layouts/backdrop'
+
 import Header from './patterns/navigation/header';
-import Home from './screens/home/home'
-import Birds from './screens/birds/birds'
-import Shop from './screens/shop/shop'
-import Nesting from './screens/nesting/nesting'
-import Earn from './screens/earn/earn'
-import Feeding from './screens/feeding/feeding'
-import Upcoming from './screens/upcoming/upcoming'
+import {Home,Earn,Feeding,Nesting,Shop,Upcoming,Birds} from './screens/index'
 import Footer from './patterns/navigation/footer';
 
 
@@ -19,6 +15,7 @@ function App() {
 		<>
 			<Router>
 				<Header />
+				<Backdrop />
 				<Switch>
 					<Route path="/" exact component={Home}/>
 					<Route path="/birds" exact component={Birds}/>

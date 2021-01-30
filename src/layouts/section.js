@@ -1,9 +1,6 @@
 import React from 'react'
 
-function Section() {
-	const style = {
-		background: 'grey',
-	}
+const Section = () => {
 	return <div></div>
 }
 
