@@ -1,19 +1,11 @@
 import React from 'react'
 
-import {Header,Footer} from '../../patterns/navigation'
-
-function Home() {
-	
-	return (
-		<React.Fragment>
-            <Header />
-            <Footer />
-        </React.Fragment>
-		
-			
-			
-	
-	)
+const Home = () => {
+    return (
+        <div>
+            Home hi
+        </div>
+    )
 }
 
-export default Home
+export default Home;

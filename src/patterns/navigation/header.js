@@ -1,5 +1,6 @@
 import React from 'react'
 import { Logo, Button, Link } from '../../components'
+import Section from '../../layouts/section'
 
 function Header(props) {
 	const renderlinks = (
@@ -9,11 +10,11 @@ function Header(props) {
 		</div>
 	)
 	return (
-		<div>
+		<Section>
 			<Logo />
 			{renderlinks}
 			<Button />
-		</div>
+		</Section>
 	)
 }
 

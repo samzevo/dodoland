@@ -4,4 +4,4 @@ const link = {
 	},
 }
 
-export default link;
+export default link
