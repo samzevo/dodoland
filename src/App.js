@@ -1,8 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Header from './patterns/navigation/header'
+import { Header, Footer } from './patterns/navigation'
 import { Home, Earn, Feeding, Nesting, Shop, Upcoming, Birds } from './screens/'
-import Footer from './patterns/navigation/footer'
 import Backdrop from './layouts/backdrop'
 
 function App() {

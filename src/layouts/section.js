@@ -3,7 +3,7 @@ import { section } from '../styles/sheets/layouts'
 
 const Section = (props) => {
 	return (
-		<div style={props.style ? props.style : Layout.sectionDefault}>
+		<div style={props.style ? props.style : section.default}>
 			{props.children}
 		</div>
 	)

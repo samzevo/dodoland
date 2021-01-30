@@ -4,4 +4,4 @@ import container from './container'
 import section from './section'
 import tab from './tab'
 
-export { Row, Column, Container, Section, Tab }
+export { row, column, container, section, tab }
