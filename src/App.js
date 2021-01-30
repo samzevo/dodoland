@@ -10,7 +10,7 @@ function App() {
 		background: 'grey',
 	}
 	return (
-		<div>
+		<div style={}>
 			<Router>
 				<Navbar />
 			</Router>
