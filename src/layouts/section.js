@@ -1,5 +1,5 @@
 import React from 'react'
-import { sec } from '../styles/sheets/layouts'
+import { section } from '../styles/sheets/layouts'
 
 const Section = (props) => {
 	return (
