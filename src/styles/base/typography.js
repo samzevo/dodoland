@@ -1,9 +1,4 @@
 
-<<<<<<< HEAD
-const typography = {
-    
-}
-=======
 const Typography={
     textDefault:{
         fontFamily:'Larsseit',
@@ -21,4 +16,3 @@ const Typography={
 }
 
 export default Typography;
->>>>>>> f4530bc9cb2bc1596cf51e0653414dc203c05f2d
