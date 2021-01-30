@@ -13,4 +13,8 @@ const Typography = {
 	},
 }
 
+<<<<<<< HEAD
+export default Typography;
+=======
 export default Typography
+>>>>>>> 4e4af69298561efa93ca49c2d7b42cabcfd528e5
