@@ -1,8 +1,13 @@
 import React from 'react'
-import  Button  from '../../components/button'
+import { Section } from '../../layouts'
+import { section } from '../../styles/sheets/layouts'
 
 const Home = () => {
-	return <div></div>
+	return (
+		<Section style={{ ...section.default, marginTop: '10vh' }}>
+			Hello
+		</Section>
+	)
 }
 
 export default Home

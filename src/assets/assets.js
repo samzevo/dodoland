@@ -4,11 +4,4 @@ import Facebook from './Facebook.svg'
 import Instagram from './Instagram.svg'
 import Twitter from './Twitter.svg'
 
-export{
-    Birdly_logo,
-    Open_sealogo,
-    Facebook,
-    Instagram,
-    Twitter
-    
-}
+export { Birdly_logo, Open_sealogo, Facebook, Instagram, Twitter }

@@ -1,7 +1,4 @@
-import Background from './Background illustration.svg'
+import Background from './bg.svg'
 import Birdly_logo from './Birdly logo.svg'
 
-export{
-    Birdly_logo,
-    Background,
-}
+export { Birdly_logo, Background }
