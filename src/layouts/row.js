@@ -1,9 +1,9 @@
 import React from 'react'
-import Layouts from '../styles/sheets/layouts/'
+import {row} from '../styles/sheets/layouts/'
 
 const Row = (props) => {
     return (
-        <div style={Layouts.row}>
+        <div style={row.default}>
             {props.children}
         </div>
     )
