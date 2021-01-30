@@ -1,9 +1,7 @@
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 
-import Backdrop from './layouts/backdrop'
-
 import Header from './patterns/navigation/header';
-import {Home,Earn,Feeding,Nesting,Shop,Upcoming,Birds} from './screens/index'
+import {Home,Earn,Feeding,Nesting,Shop,Upcoming,Birds} from './screens/'
 import Footer from './patterns/navigation/footer';
 
 
@@ -15,7 +13,6 @@ function App() {
 		<>
 			<Router>
 				<Header />
-				<Backdrop />
 				<Switch>
 					<Route path="/" exact component={Home}/>
 					<Route path="/birds" exact component={Birds}/>
