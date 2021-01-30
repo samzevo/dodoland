@@ -1,13 +1,9 @@
 import React from 'react'
 
-import {container} from '../styles/sheets/layouts/'
+import { container } from '../styles/sheets/layouts/'
 
-const Container = () => {
-    return (
-        <div style={container.default}>
-            
-        </div>
-    )
+const Container = (props) => {
+	return <div style={container.default}>{props.children}</div>
 }
 
 export default Container

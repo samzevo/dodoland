@@ -1,8 +1,7 @@
-import React from 'react'
 const Colors = {
-    primary: '#570A7B',
-    white:'#fff',
-    black:'black',
+	primary: '#570A7B',
+	white: '#fffff',
+	black: 'black',
 	background: {
 		primary: '#FFD3DB',
 		secondary: '#F5F5F5',
