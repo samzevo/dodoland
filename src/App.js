@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Button from './components/button'
 import Navbar from './patterns/navigation/navbar'
 
-import { logo } from './styles/sheets'
+import { logo } from './styles/sheets/components'
 
 function App() {
 	const style = {

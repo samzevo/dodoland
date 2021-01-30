@@ -1,5 +1,5 @@
 import React from 'react'
-import { logo } from '../styles/sheets'
+import { logo } from '../styles/sheets/components'
 
 function Logo(props) {
 	return (
