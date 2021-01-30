@@ -6,6 +6,7 @@ import Section from '../../layouts/section'
 import Row from '../../layouts/row'
 
 import { section } from '../../styles/sheets/layouts'
+import {Links} from '../../data/data'
 
 function Header(props) {
 	const renderlinks = (

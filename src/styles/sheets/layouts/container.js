@@ -1,7 +1,8 @@
 
 const container={
     default:{
-        margin:'10px',       
+        margin:'10px', 
+        width:'100%'      
     },
 }
 
