@@ -1,9 +1,9 @@
 
 const Layouts={
-    container:{
+    containerDfault:{
         margin:'10px',
     },
-    section:{
+    sectionDefault:{
         width:'100%',
     },
 }
