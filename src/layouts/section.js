@@ -1,11 +1,7 @@
 import React from 'react'
-
-const Section = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+import Layout from '../styles/sheets/layouts'
+const Section = (props) => {
+	return <div style={Layout.sectionDefault}>{props.children}</div>
 }
 
 export default Section

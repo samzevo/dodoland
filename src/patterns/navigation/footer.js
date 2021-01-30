@@ -2,7 +2,7 @@ import React from 'react'
 import { Logo } from '../../components'
 import Row from '../../layouts/row'
 import{Open_sealogo,Facebook,Instagram,Twitter} from '../../assets/assets'
-import Column from '../../layouts/column'
+import {Row,Column} from '../../layouts/index'
 
 function Footer(props) {
 	
