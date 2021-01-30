@@ -4,19 +4,21 @@ import Button from './components/button'
 import Navbar from './patterns/navigation/navbar'
 
 import { logo } from './styles/sheets'
+import Header from './patterns/navigation/header'
 
 function App() {
 	const style = {
 		background: 'grey',
 	}
 	return (
-		<div style={}>
+		<div >
 			<Router>
 				<Navbar />
 			</Router>
 			<Logo style={logo.default} />
 			<Button text='Get Started' />
 			<Button text='Guide' />
+			<Header />
 		</div>
 	)
 }

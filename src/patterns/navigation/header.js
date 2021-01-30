@@ -1,6 +1,6 @@
 import React from 'react'
 import { Logo, Button, Link } from '../../components'
-import { button } from '../styles/sheets'
+//import { button } from '../styles/sheets'
 
 function Header(props) {
 	const renderlinks = (
