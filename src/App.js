@@ -5,7 +5,7 @@ import Button from './components/button'
 
 import { logo } from './styles/sheets'
 import Header from './patterns/navigation/header'
-import{Home} from './screens/home'
+import Home from './screens/home'
 function App() {
 	const style = {
 		background: 'grey',
@@ -17,7 +17,7 @@ function App() {
 			<Logo style={logo.default} />
 			<Button text='Get Started' />
 			<Button text='Guide' />
-			
+			<Home />
 			<Header />
 		</div>
 	)
