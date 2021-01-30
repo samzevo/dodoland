@@ -1,9 +1,4 @@
-import Logo from './components/logo'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Button from './components/button'
-import Navbar from './patterns/navigation/navbar'
-
-import { logo } from './styles/sheets'
 
 function App() {
 	const style = {
@@ -11,12 +6,16 @@ function App() {
 	}
 	return (
 		<div>
+<<<<<<< HEAD
 			<Router>
 				<Navbar />
 			</Router>
 			<Logo style={logo.default} />
 			<Button text='Get Started' />
 			<Button text='Guide' />
+=======
+			<Router></Router>
+>>>>>>> f4530bc9cb2bc1596cf51e0653414dc203c05f2d
 		</div>
 	)
 }
