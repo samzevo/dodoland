@@ -4,6 +4,7 @@ const link = {
 	default: {
 		maxWidth: 100,
 		color: 'white',
+		textDecoration: 'none',
 	},
 }
 
