@@ -1,22 +1,13 @@
+import {Row} from './row';
+import {Column} from './column'
+import {Container} from './container'
+import {Section} from './section'
+import {Tab} from './tab'
 
-const Layouts={
-    containerDefault:{
-        margin:'10px',
-        
-    },
-    sectionDefault:{
-        width:'100%',
-    },
-    row:{
-        display:'flex',
-        flexDirection:'row',
-        justifyContent:'space-between',
-        alignItems:'center'
-    },
-    column:{
-        display:'flex',
-        flexDirection:'column',
-    }
+export{
+    Row,
+    Column,
+    Container,
+    Section,
+    Tab,
 }
-
-export default Layouts;
