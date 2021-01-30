@@ -2,6 +2,11 @@ import React from 'react'
 import { Logo } from '../../components'
 
 function Footer(props) {
+	const style={
+		footer:{
+			
+		}
+	}
 	const renderSocialMediaIcons = (
 		<div>
 			<Logo />
