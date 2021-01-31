@@ -1,5 +1,6 @@
 const container = {
 	default: {
+		position:'relative',
 		width: '100%',
 		display: 'flex',
 		alignItems: 'center',
