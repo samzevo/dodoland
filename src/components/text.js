@@ -1,19 +1,20 @@
 import React from 'react'
 import { Typography } from '../styles/base'
+import {Colors} from '../styles/base'
 
 function Text(props) {
     
     const renderTextDefault =
-    <p size="default" style={Typography.textDefault}> 
+    <p size="default" style={Typography.textDefault} > 
         {props.children}
     </p>
 
     const renderTextMedium=
-    <p size="medium"  style={Typography.textMedium}>
+    <p size="medium"  style={Typography.textMedium} >
         {props.children}
     </p>
     const renderTextLarge=
-    <p size="large" style={Typography.textLarge}>
+    <p size="large" style={Typography.textLarge} >
         {props.children}
     </p>
     const renderText = (props) =>  { 

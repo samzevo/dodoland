@@ -1,7 +1,7 @@
 import { Colors } from '../../base'
 const button = {
 	default: {
-		maxWidth: 180,
+		minWidth: 140,
 		height: 38,
 		backgroundColor: Colors.white,
 		color: Colors.accent.primary,

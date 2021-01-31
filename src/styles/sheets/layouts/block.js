@@ -4,7 +4,6 @@ const block = {
 		flexDirection: 'column',
 		alignItems: 'left',
 		justifyContent: 'space-between',
-		backgroundColor: 'pink',
 	},
 }
 
