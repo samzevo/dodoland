@@ -17,15 +17,20 @@ function Title(props) {
         {props.children}
     </p>
 
-    const renderTitle = (props) =>{
-        {props.size === "medium" ? renderTitleMedium :renderTitleLarge}
+    const renderTitle = (props) => {
+        return(
+            <div>{props.size === "medium" ? renderTitleMedium :renderTitleLarge}</div>
+        
+        )
     }
 
     return (
         <div>
-            {props.size ? renderTitle :renderTitleDefault}
+             { props.size ? renderTitle : renderTitleDefault}
         </div>
+          
     )
+    
 }
 
 export default Title

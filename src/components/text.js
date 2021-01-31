@@ -17,14 +17,16 @@ function Text(props) {
         {props.children}
     </p>
     const renderText = (props) =>  { 
-         {props.size === "medium" ? renderTextMedium : renderTextLarge}
+        return<div>
+             {props.size === "medium" ? renderTextMedium : renderTextLarge}
+        </div>
         
     } 
     
     return (
         <div>
 
-          {props.size ? renderText : renderTextDefault }
+          {props.size ? renderText(props) : renderTextDefault }
             
         </div>
     )

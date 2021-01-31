@@ -13,7 +13,7 @@ const Typography = {
 	},
 	textLarge: {
 		fontFamily: 'Larsseit',
-		fontSize: '14px',
+		fontSize: '50px',
 		fontWeight: 'normal',
 		letterSpacing: '0.1em',
 	},

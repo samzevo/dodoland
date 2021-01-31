@@ -5,7 +5,6 @@ const container = {
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between',
-		backgroundColor: 'pink',
 		margin: '16px',
 	},
 }
