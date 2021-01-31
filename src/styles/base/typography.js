@@ -9,14 +9,14 @@ export default function Typography(props, category) {
          ...props.style,
       },
       textMedium: {
-         color: props.color ? props.color : Colors.accent.primary,
-         fontSize: '16px',
+         color: props.color ? props.color : Colors.white,
+         fontSize: '22px',
          margin: '0px',
          fontWeight: '100',
          ...props.style,
       },
       textLarge: {
-         color: props.color ? props.color : Colors.accent.primary,
+         color: props.color ? props.color : Colors.white,
          fontSize: '50px',
          margin: '0px',
          fontWeight: '600',
@@ -30,12 +30,12 @@ export default function Typography(props, category) {
       },
       titleLarge: {
          color: props.color ? props.color : Colors.accent.tertiary,
-         fontSize: '28px',
+         fontSize: '50px',
          margin: '0px',
          ...props.style,
 	  },
 	  titleMedium: {
-		color: props.color ? props.color : Colors.accent.tertiary,
+		color: props.color ? props.color : Colors.accent.primary,
 		fontSize: '28px',
 		margin: '0px',
 		...props.style,
@@ -46,12 +46,7 @@ export default function Typography(props, category) {
          margin: '0px',
          ...props.style,
       },
-      quote: {
-         color: props.color ? props.color : Colors.accent.primary,
-         fontSize: '14px',
-         margin: '0px',
-         ...props.style,
-      },
+     
       link: {
          color: props.color ? props.color : Colors.accent.primary,
          fontSize: '14px',
@@ -69,7 +64,7 @@ export default function Typography(props, category) {
    const selectTitle =
       (!props.type && styles.titleDefault) ||
 	  (props.type === 'titleLarge' && styles.titleLarge)||
-	  (props.type === 'titleMedium' && style.titleMedium)
+	  (props.type === 'titleMedium' && styles.titleMedium)
 
    const select = category === 'title' ? selectTitle : selectText
 

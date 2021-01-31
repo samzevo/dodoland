@@ -9,7 +9,7 @@ const button = {
 		paddingRight: 32,
 		border: 'none',
 		borderRadius: '5px',
-		fontFamily: 'Larsseit',
+		fontFamily: 'Poppins'
 	},
 }
 
