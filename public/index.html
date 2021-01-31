@@ -32,15 +32,18 @@
 			padding: 0px;
 			box-sizing: border-box;
 			overflow-x: hidden;
+			background-image: url('/bg.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
-		button{
+		button {
 			position: relative;
 			cursor: pointer;
 		}
-		button:hover::before{
+		button:hover::before {
 			content: '';
 			position: absolute;
-			top:-5px;
+			top: -5px;
 			left: -8px;
 			right: 0;
 			bottom: 0;
@@ -49,9 +52,10 @@
 			border-radius: 5px;
 			border: 2px solid#570A7B;
 		}
-		a{
+		a {
 			position: relative;
 		}
+<<<<<<< HEAD
 		a:hover{
 			cursor: pointer;
 		}
@@ -61,13 +65,32 @@
 			width:0;
 			height: 4px;
 			background-color: #570A7B;
+=======
+		a::after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 2.5px;
+			background-color: #570a7b;
+>>>>>>> d54ef27fa352d6f3372046c16c3085fcf87e7aba
 		}
-		a:active::after{
+		a:active::after {
 			width: 100%;
-			transition: width .3s;
+			transition: width 0.3s;
 		}
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		a {
+			margin: 12px;
+		}
+<<<<<<< HEAD
 		
 		
+=======
+>>>>>>> d54ef27fa352d6f3372046c16c3085fcf87e7aba
 	</style>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
