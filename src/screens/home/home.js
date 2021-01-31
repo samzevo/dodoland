@@ -7,6 +7,7 @@ import {button} from '../../styles/sheets/components/'
 import illustration from '../../assets/illustration.svg'
 import { Colors } from '../../styles/base'
 import {Guide,Wallet,Instagram} from '../../assets/assets'
+import './home.css'
 
 const Home = (props) => {
 	return (
