@@ -1,8 +1,10 @@
 import React from 'react'
-import  Button  from '../../components/button'
 
 const Home = () => {
-	return <div></div>
+	return (
+		<>
+		</>
+	);
 }
 
 export default Home
