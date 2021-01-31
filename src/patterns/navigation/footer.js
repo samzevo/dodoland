@@ -29,7 +29,7 @@ function Footer(props) {
 				alignItems: 'center',
 				margin: 32,
 			}}>
-			<Column ><span>Buy on</span><Logo src={Open_sealogo} /></Column>
+			<Column ><Logo src={Open_sealogo} /></Column>
 			
 			{renderSocialMediaIcons}
 		</Section>

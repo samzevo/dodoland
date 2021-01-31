@@ -1,0 +1,6 @@
+a{
+    color: white;
+}
+a.active {
+    border-bottom: 4px solid #570A7B;
+}

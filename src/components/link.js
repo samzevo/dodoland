@@ -1,13 +1,14 @@
 import React from 'react'
-import {Link as ReactLink} from 'react-router-dom'
+import {Link as ReactLink,NavLink} from 'react-router-dom'
 
 import { link } from '../styles/sheets/components'
+import './NavLink.css'
 
 function Link(props) {
 	return (
-		<a to={props.to} style={props.style ? props.style : link.default}>
+		<NavLink to={props.to} style={props.style ? props.style : link.default} activeClassName="active" exact>
 			{props.children}
-		</a>
+		</NavLink>
 	)
 }
 

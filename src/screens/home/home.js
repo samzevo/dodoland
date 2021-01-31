@@ -2,9 +2,13 @@ import React from 'react'
 import { Section, Row, Container, Block } from '../../layouts'
 import { section, row, container } from '../../styles/sheets/layouts'
 import { Button } from '../../components'
+import {Title,Text,Icon} from '../../components/'
+import {button} from '../../styles/sheets/components/' 
 import illustration from '../../assets/illustration.svg'
+import { Colors } from '../../styles/base'
+import {Guide,Wallet,Instagram} from '../../assets/assets'
 
-const Home = () => {
+const Home = (props) => {
 	return (
 		<Section
 			style={{
@@ -18,16 +22,18 @@ const Home = () => {
 					justifyContent: 'space-around',
 				}}>
 				<Block>
-					<h1>Welcome to birdly</h1>
-					<p>Collect and breed love birds forever and ever</p>
+					<Title color={Colors.primary} type="titleLarge">Welcome to birdly</Title>
+					<Text type="textMedium"  >Collect and breed love birds forever and ever</Text>
+					<Text type="textMedium"color={Colors.white}><span style={{fontSize:25,fontWeight:'bold'}}>16.8k Birds</span> Burned through fees</Text>
 					<Row
 						style={{
 							...row.default,
-							margin: '16px',
-							justifyContent: 'space-between',
+							justifyContent: 'flex-start',
+							marginTop:'32px'
+							
 						}}>
-						<Button>Get started</Button>
-						<Button>Guide</Button>
+						<Button type="primary" style={{...button.default,marginRight:'32px'}}>Get started</Button>
+						<Button type="btnIcon"> <Icon src={Guide} style={{marginRight:'12px'}}/> Guide</Button>
 					</Row>
 				</Block>
 				<Block
