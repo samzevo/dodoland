@@ -5,7 +5,6 @@ const link = {
 		fontFamily:'Larsseit',
 		textDecoration:'none',
 		maxWidth: 100,
-		color: 'white',
 		textDecoration: 'none',
 	},
 }
