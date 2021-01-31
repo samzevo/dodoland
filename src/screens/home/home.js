@@ -2,10 +2,11 @@ import React from 'react'
 import { Section, Row, Container, Block } from '../../layouts'
 import { section, row, container } from '../../styles/sheets/layouts'
 import { Button } from '../../components'
-import {Title,Text} from '../../components/'
+import {Title,Text,Icon} from '../../components/'
 import {button} from '../../styles/sheets/components/' 
 import illustration from '../../assets/illustration.svg'
 import { Colors } from '../../styles/base'
+import {Guide,Wallet,Instagram} from '../../assets/assets'
 
 const Home = (props) => {
 	return (
@@ -31,8 +32,8 @@ const Home = (props) => {
 							marginTop:'32px'
 							
 						}}>
-						<Button style={{...button.default,marginRight:'32px'}}>Get started</Button>
-						<Button>Guide</Button>
+						<Button type="primary" style={{...button.default,marginRight:'32px'}}>Get started</Button>
+						<Button type="btnIcon"> <Icon src={Guide} style={{marginRight:'12px'}}/> Guide</Button>
 					</Row>
 				</Block>
 				<Block

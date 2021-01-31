@@ -1,12 +1,13 @@
 import React from 'react'
 
-import { Logo, Button, Link } from '../../components'
+import { Logo, Button, Link ,Icon} from '../../components'
 import logo from '../../assets/logos/logo.svg'
 import { Row, Section, Container } from '../../layouts'
 
 import { section } from '../../styles/sheets/layouts'
 import { Links } from '../../data/data'
 import { link as linkStyle } from '../../styles/sheets/components'
+import { Wallet } from '../../assets/assets'
 
 function Header(props) {
 	const renderlinks = (
@@ -34,7 +35,7 @@ function Header(props) {
 			}}>
 			<Logo src={logo} />
 			{renderlinks}
-			<Button>Connect Wallet</Button>
+			<Button type="btnIcon"><Icon src={Wallet} style={{marginRight:'12px'}}/>Connect Wallet</Button>
 		</Section>
 	)
 }
