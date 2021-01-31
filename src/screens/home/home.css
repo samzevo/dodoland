@@ -1,8 +1,23 @@
+.container{
+    background-color: red;
+}
+
+.section{
+    background-color: blueviolet;
+}
+
 @media only screen and (max-width:480px) {
     .container{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        background-color: chartreuse;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    .container{
+        background-color: green;
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
