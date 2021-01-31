@@ -10,6 +10,8 @@
 			content="Web site created using create-react-app"
 		/>
 		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 		<!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -35,11 +37,17 @@
 			background-image: url('/bg.svg');
 			background-repeat: no-repeat;
 			background-size: cover;
+			font-family:'Poppins';
+			
 		}
 		button {
 			position: relative;
 			cursor: pointer;
 		}
+		button:focus{
+			outline: none;
+		}
+
 		button:hover::before {
 			content: '';
 			position: absolute;
@@ -51,6 +59,7 @@
 			height: 90%;
 			border-radius: 5px;
 			border: 2px solid#570A7B;
+			cursor:pointer;
 		}
 		a:hover{
 			color: #570A7B;
@@ -61,7 +70,7 @@
 		h3,
 		h4,
 		a {
-			margin: 12px;
+			font-family: 'Poppins';
 		}
 	</style>
 	<body>

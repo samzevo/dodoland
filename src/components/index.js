@@ -1,6 +1,7 @@
 import Link from './link'
 import Button from './button'
 import Logo from './logo'
-import Images from './images'
+import Title from './title'
+import Text from './text'
 
-export { Logo, Link, Button,Images }
+export { Logo, Link, Button,Title,Text }

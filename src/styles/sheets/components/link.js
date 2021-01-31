@@ -2,7 +2,7 @@ import Colors from '../../base/colors'
 
 const link = {
 	default: {
-		fontFamily:'Larsseit',
+		fontFamily:'Poppins',
 		textDecoration:'none',
 		maxWidth: 100,
 		textDecoration: 'none',
