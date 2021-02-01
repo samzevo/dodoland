@@ -31,6 +31,7 @@ function Footer(props) {
 				<Container style={{
 					...container.default,
 					flexDirection:'row',
+					margin:'0 60px'
 				}}>
 					<Column ><Logo src={Open_sealogo} /></Column>
 			
