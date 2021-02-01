@@ -21,6 +21,8 @@ function Footer(props) {
 		<Section
 			style={{
 				...section.default,
+				position:'fixed',
+				bottom:'0',
 				justifyContent: 'space-between',
 				alignItems: 'center',
 				margin: '32px 0',
