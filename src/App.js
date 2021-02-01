@@ -5,13 +5,29 @@ import { Home, Earn, Feeding, Nesting, Shop, Upcoming, Birds } from './screens/'
 
 
 function App() {
+	const [device, setDevice] = React.useState()
+
+	React.useEffect(() => {
+		detectDevice()
+	}, [])
+
 	const style = {
 		background: 'grey',
 	}
+
+	const detectDevice = () => {
+		const width = window.innerWidth
+		if (width <= 576) {
+			setDevice('mobile')
+		} else {
+			setDevice('desktop')
+		}
+	}
+
 	return (
 		<React.Fragment>
 			<Router>
-				<Header />
+				<Header device={device} />
 				{/* <Backdrop/> */}
 				<Switch>
 					<Route path='/' exact component={Home} />

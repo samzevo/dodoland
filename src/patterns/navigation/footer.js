@@ -1,8 +1,7 @@
 import React from 'react'
 import { Logo } from '../../components'
-import {section} from '../../styles/sheets/layouts/'
-import {Section,Container} from '../../layouts/' 
-import { Row, Column,Conta } from '../../layouts/index'
+import {container, section} from '../../styles/sheets/layouts/'
+import {Section,Container,Column,Row} from '../../layouts/' 
 import {Images} from '../../data/data'
 import {Open_sealogo} from '../../assets/assets'
 function Footer(props) {
@@ -22,17 +21,19 @@ function Footer(props) {
 		<Section
 			style={{
 				...section.default,
-				position: 'fixed',
-				bottom: 0,
-				left: 0,
 				justifyContent: 'space-between',
 				alignItems: 'center',
 				margin: '32px 0',
 			}}>
-				<Container>
-					<Column ><Logo src={Open_sealogo} /></Column>
-			
-					{renderSocialMediaIcons}
+				<Container style={{
+					...container.default,
+					flexDirection:'row',
+					margin:'0 40px'
+				}}>
+					<Column >
+						<Logo src={Open_sealogo} />
+					</Column>
+						{renderSocialMediaIcons}
 				</Container>
 			
 		</Section>
