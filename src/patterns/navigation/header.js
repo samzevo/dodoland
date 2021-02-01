@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{ useState,useEffect} from 'react'
 
 import { Logo, Button, Link, Icon } from '../../components'
 import logo from '../../assets/logos/logo.svg'
@@ -9,7 +9,31 @@ import { Links } from '../../data/data'
 import { link as linkStyle } from '../../styles/sheets/components'
 import { Wallet } from '../../assets/assets'
 
+
+	const Web3 = require("web3");
+	// const connectwallet = () => {  
+		
+	// }
+
+	const connect = async() =>{
+		if (window.ethereum) {   
+			window.web3 = new Web3(window.ethereum);   
+			window.ethereum.enable(); 
+			const ethereum =window.ethereum;
+			const accounts = await ethereum.request({ method: 'eth_accounts' }); 
+			
+			console.log(accounts);  
+			return true; 
+		}  
+		return false;
+	}
+	// ethereum.isConnected(): boolean;
+
+	
+
 function Header(props) {
+	const [isConnect,setIsConnect]=useState('CONNECT WALLET')
+
 	const renderlinks = (
 		<Row>
 			{Links.map((link) => (
@@ -22,6 +46,7 @@ function Header(props) {
 			))}
 		</Row>
 	)
+	
 
 	const renderWebHeader = (
 		<Section
@@ -36,9 +61,12 @@ function Header(props) {
 			}}>
 			<Logo src={logo} />
 			{renderlinks}
-			<Button type='btnIcon'>
+			<Button type='btnIcon'
+			onClick={connect}
+			
+			 >
 				<Icon src={Wallet} style={{ marginRight: '12px' }} />
-				Connect Wallet
+				{isConnect}
 			</Button>
 		</Section>
 	)
@@ -55,10 +83,14 @@ function Header(props) {
 				alignItems: 'center',
 			}}>
 			<Logo src={logo} />
-			<Button type='btnIcon'>
+			<Button type='btnIcon'
+			onClick={connect}
+			
+			>
 				<Icon src={Wallet} style={{ marginRight: '12px' }} />
 				Connect Wallet
 			</Button>
+			
 		</Section>
 	)
 

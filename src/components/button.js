@@ -6,8 +6,10 @@ function Button(props) {
 	
 	const renderPrimarybutton=<button
 	href={props.href}
+	value={props.value}
 	style={props.style ? props.style : button.default}
 	type={props.type}
+	onClick={props.onClick}
 	>
 	{props.children}
 	
@@ -16,7 +18,8 @@ function Button(props) {
 	const renderButtonIcon=<button
 	href={props.href}
 	type={props.type}
-	style={props.style ? props.style : button.icon}>
+	style={props.style ? props.style : button.icon}
+	onClick={props.onClick}>
 		
 	{props.children}
 	</button>
