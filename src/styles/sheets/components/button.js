@@ -1,7 +1,6 @@
 import { Colors } from '../../base'
 const button = {
 	default: {
-		
 		minWidth: 140,
 		height: 38,
 		backgroundColor: Colors.white,
@@ -10,15 +9,14 @@ const button = {
 		paddingRight: 32,
 		border: 'none',
 		borderRadius: '5px',
-		fontFamily: 'Poppins'
+		fontFamily: 'Poppins',
 	},
-	icon:{
-		position:'relative',
+	icon: {
+		position: 'relative',
 		minWidth: 140,
-		display:'flex',
-		flexWrap:'wrap',
-		justifyContent:'center',
-		alignItems:'center',
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
 		height: 38,
 		backgroundColor: Colors.white,
 		color: Colors.accent.primary,
@@ -26,8 +24,8 @@ const button = {
 		paddingRight: 32,
 		border: 'none',
 		borderRadius: '5px',
-		fontFamily: 'Poppins'
-	}
+		fontFamily: 'Poppins',
+	},
 }
 
 export default button
