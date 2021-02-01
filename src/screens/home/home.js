@@ -6,7 +6,7 @@ import {Title,Text,Icon} from '../../components/'
 import {button} from '../../styles/sheets/components/' 
 import illustration from '../../assets/illustration.svg'
 import { Colors } from '../../styles/base'
-import {Guide,Wallet,Instagram} from '../../assets/assets'
+import {Guide} from '../../assets/assets'
 import './home.css'
 
 const Home = (props) => {
@@ -41,7 +41,7 @@ const Home = (props) => {
 					style={{
 						...row.default,
 					}}>
-					<img style={{ width: '100%' }} src={illustration} />
+					<img alt="image" style={{ width: '100%' }} src={illustration} />
 				</Block>
 			</Container>
 		</Section>

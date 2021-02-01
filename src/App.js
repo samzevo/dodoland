@@ -2,8 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Header, Footer } from './patterns/navigation'
 import { Home, Earn, Feeding, Nesting, Shop, Upcoming, Birds } from './screens/'
-import Backdrop from './layouts/backdrop'
-import Button from './components/button'
+
 
 function App() {
 	const style = {
