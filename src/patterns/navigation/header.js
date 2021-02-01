@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Logo, Button, Link ,Icon} from '../../components'
+import { Logo, Button, Link, Icon } from '../../components'
 import logo from '../../assets/logos/logo.svg'
 import { Row, Section, Container } from '../../layouts'
 
@@ -22,7 +22,8 @@ function Header(props) {
 			))}
 		</Row>
 	)
-	return (
+
+	const renderWebHeader = (
 		<Section
 			style={{
 				...section.default,
@@ -35,9 +36,33 @@ function Header(props) {
 			}}>
 			<Logo src={logo} />
 			{renderlinks}
-			<Button type="btnIcon"><Icon src={Wallet} style={{marginRight:'12px'}}/>Connect Wallet</Button>
+			<Button type='btnIcon'>
+				<Icon src={Wallet} style={{ marginRight: '12px' }} />
+				Connect Wallet
+			</Button>
 		</Section>
 	)
+
+	const renderMobileHeader = (
+		<Section
+			style={{
+				...section.default,
+				height: '10vh',
+				position: 'fixed',
+				top: 0,
+				left: 0,
+				justifyContent: 'space-around',
+				alignItems: 'center',
+			}}>
+			<Logo src={logo} />
+			<Button type='btnIcon'>
+				<Icon src={Wallet} style={{ marginRight: '12px' }} />
+				Connect Wallet
+			</Button>
+		</Section>
+	)
+
+	return props.device === 'mobile' ? renderMobileHeader : renderWebHeader
 }
 
 export default Header

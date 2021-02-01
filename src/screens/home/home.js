@@ -23,7 +23,7 @@ const Home = (props) => {
 				}}>
 				<Block>
 					<Title color={Colors.primary} type='titleLarge'>
-						Welcome to birdly
+						Welcome to dodoland
 					</Title>
 					<Text type='textMedium'>
 						Collect and breed love birds forever and ever
