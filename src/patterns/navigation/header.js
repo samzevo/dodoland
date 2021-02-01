@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 
 import Sidebar from './sidebar'
@@ -9,7 +9,7 @@ import { Row, Section, Container } from '../../layouts'
 import { section } from '../../styles/sheets/layouts'
 import { Links } from '../../data/data'
 import { link as linkStyle } from '../../styles/sheets/components'
-import { Wallet } from '../../assets/assets'
+import { Wallet,Hamburger } from '../../assets/assets'
 // import ethereum from 'ethereumjs-tx'
 const Web3 = require("web3");
 
@@ -53,6 +53,12 @@ const ethEnabled = () => {
 
 function Header(props) {
 	//const [value,changedValue]=useState('Connect Wallet')
+
+	const [active,setActive] = useState(false)
+
+	const menu= () => {
+		setActive(!active)
+	}
 	
 	const renderlinks = (
 		<Row>
