@@ -1,6 +1,6 @@
 import React from 'react'
 import { button } from '../styles/sheets/components'
-import {Icon} from '../components/'
+
 
 function Button(props) {
 	
@@ -19,7 +19,8 @@ function Button(props) {
 	href={props.href}
 	type={props.type}
 	style={props.style ? props.style : button.icon}
-	onClick={props.onClick}>
+	onClick={props.onClick}
+	>
 		
 	{props.children}
 	</button>
