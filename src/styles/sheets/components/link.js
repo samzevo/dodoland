@@ -1,4 +1,4 @@
-import Colors from '../../base/colors'
+
 
 const link = {
 	default: {

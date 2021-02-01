@@ -65,7 +65,7 @@ const Home = (props) => {
 					style={{
 						...row.default,
 					}}>
-					<img style={{ width: '100%' }} src={illustration} />
+					<img alt="image" style={{ width: '100%' }} src={illustration} />
 				</Block>
 			</Container>
 		</Section>

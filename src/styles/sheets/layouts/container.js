@@ -7,6 +7,7 @@ const container = {
 		justifyContent: 'space-between',
 		margin: '16px',
 	},
+
 }
 
 export default container
