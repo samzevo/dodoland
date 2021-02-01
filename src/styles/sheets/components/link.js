@@ -5,7 +5,6 @@ const link = {
 		fontFamily:'Poppins',
 		textDecoration:'none',
 		maxWidth: 100,
-		textDecoration: 'none',
 	},
 }
 

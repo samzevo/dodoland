@@ -4,6 +4,7 @@ function Icon(props){
 
     return <img  src={props.src}
     style={props.style}
+    onClick={props.onClick}
     alt="icon"/>
 }
 

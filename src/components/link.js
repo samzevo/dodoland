@@ -6,7 +6,7 @@ import './NavLink.css'
 
 function Link(props) {
 	return (
-		<NavLink to={props.to} style={props.style ? props.style : link.default} activeClassName="active" exact>
+		<NavLink to={props.to} style={props.style ? props.style : link.default} activeClassName={props.activeClassName?props.activeClassName:"web"} exact>
 			{props.children}
 		</NavLink>
 	)

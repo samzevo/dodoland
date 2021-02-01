@@ -29,8 +29,10 @@ export default function Typography(props, category) {
 			...props.style,
 		},
 		titleLarge: {
-			color: props.color ? props.color : Colors.accent.tertiary,
-			fontSize: '4vw',
+			color: props.color ? props.color : Colors.white,
+			fontSize: '3rem',
+			fontWeight:'bold',
+			textShadow:"1px 1px 3px black",
 			margin: '0px',
 			...props.style,
 		},

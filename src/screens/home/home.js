@@ -9,6 +9,8 @@ import { Colors } from '../../styles/base'
 import { Guide, Wallet, Instagram } from '../../assets/assets'
 
 const Home = (props) => {
+
+	
 	return (
 		<Section
 			style={{
@@ -22,7 +24,7 @@ const Home = (props) => {
 					justifyContent: 'space-around',
 				}}>
 				<Block>
-					<Title color={Colors.primary} type='titleLarge'>
+					<Title color={Colors.whites} type='titleLarge'>
 						Welcome to dodoland
 					</Title>
 					<Text type='textMedium'>
