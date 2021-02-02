@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React ,{ useState,useEffect} from 'react'
 
 
 import Sidebar from './sidebar'
@@ -51,6 +51,28 @@ const ethEnabled = () => {
 //   }
 
 
+
+	// const Web3 = require("web3");
+	// const connectwallet = () => {  
+		
+	// }
+
+	const connect = async() =>{
+		if (window.ethereum) {   
+			window.web3 = new Web3(window.ethereum);   
+			window.ethereum.enable(); 
+			const ethereum =window.ethereum;
+			const accounts = await ethereum.request({ method: 'eth_accounts' }); 
+			
+			console.log(accounts);  
+			return true; 
+		}  
+		return false;
+	}
+	// ethereum.isConnected(): boolean;
+
+	
+
 function Header(props) {
 	//const [value,changedValue]=useState('Connect Wallet')
 
@@ -73,6 +95,7 @@ function Header(props) {
 			))}
 		</Row>
 	)
+	
 
 	const renderWebHeader = (
 		<Section
@@ -87,9 +110,13 @@ function Header(props) {
 			}}>
 			<Logo src={logo} />
 			{renderlinks}
-			<Button onClick={ethEnabled}
-				
-				type="btnIcon"><Icon src={Wallet} style={{marginRight:'12px'}}/>Connect Walet</Button>
+			<Button type='btnIcon'
+			onClick={connect}
+			
+			 >
+				<Icon src={Wallet} style={{ marginRight: '12px' }} />
+				connect wallet
+			</Button>
 		</Section>
 	)
 
