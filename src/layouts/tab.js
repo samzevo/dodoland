@@ -9,7 +9,7 @@ const Tab = ({ children }) => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <ul className={styles.tabs}>
         {children.map((tab) => {
             const label = tab.props.label;

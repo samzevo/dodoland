@@ -1,7 +1,10 @@
 .container{
     width:840px;
-    background-color: burlywood;
+    background-color:white;
     height:370px;
+    left: 280px;
+    top: 120px;
+    position: absolute;
     }
     
     
@@ -14,9 +17,10 @@
     }
     
     .tabs >li{
-        margin:0 1em;
+        margin:0 0em;
         padding:0.5em 1em;
         width:423px;
+        
     }
     
     .current{

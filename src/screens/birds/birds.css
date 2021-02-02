@@ -1,0 +1,64 @@
+.card{
+    background-color: white;
+    width:25%;
+    height: 220px;
+  }
+  .image{
+    width:100%;
+    height: 75%;
+  }
+  .image img{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .content{
+    height: 20%;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: bold;
+  }
+  .slick-slide{
+      margin: 0  0 0;
+  }
+.slick-arrow.slick-prev::before{
+    position: absolute;
+    top: -50%;
+    left: -50px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.slick-arrow.slick-next::before{
+    position: absolute;
+    top: -50%;
+    right: -50px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.birdsSectionTwo{
+    width:50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 160px;
+}
+
+.birdsSectionTwo .leftBlock{
+    height: 160px;
+    background-image: url(../../assets/images/birds1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.birdsSectionTwo .rightBlock{
+    padding: 10px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
