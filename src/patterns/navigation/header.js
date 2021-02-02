@@ -79,7 +79,7 @@ function Header(props) {
 			style={{
 				...section.default,
 				height: '10vh',
-				position: 'fixed',
+				position: 'relative',
 				top: 0,
 				left: 0,
 				justifyContent: 'space-around',

@@ -1,4 +1,6 @@
 import React from 'react'
+import './home.css'
+
 import { Section, Row, Container, Block } from '../../layouts'
 import { section, row, container } from '../../styles/sheets/layouts'
 import { Button } from '../../components'
@@ -15,7 +17,6 @@ const Home = (props) => {
 		<Section
 			style={{
 				...section.default,
-				marginTop: '10vh',
 				height: '60vh',
 			}}>
 			<Container
@@ -65,7 +66,7 @@ const Home = (props) => {
 					style={{
 						...row.default,
 					}}>
-					<img alt="image" style={{ width: '100%' }} src={illustration} />
+					<img alt="image" className="homeImage" src={illustration} />
 				</Block>
 			</Container>
 		</Section>

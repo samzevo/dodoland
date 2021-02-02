@@ -25,6 +25,7 @@ export default function Typography(props, category) {
 		titleDefault: {
 			color: props.color ? props.color : Colors.accent.primary,
 			fontSize: '22px',
+			fontWeight:'bold',
 			margin: '0px',
 			...props.style,
 		},
