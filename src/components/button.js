@@ -6,6 +6,7 @@ function Button(props) {
 	
 	const renderPrimarybutton=<button
 	href={props.href}
+	value={props.value}
 	style={props.style ? props.style : button.default}
 	type={props.type}
 	onClick={props.onClick}

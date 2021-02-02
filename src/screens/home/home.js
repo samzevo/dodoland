@@ -8,6 +8,7 @@ import illustration from '../../assets/illustration.svg'
 import { Colors } from '../../styles/base'
 import { Guide, Wallet, Instagram } from '../../assets/assets'
 
+
 const Home = (props) => {
 
 	
@@ -48,7 +49,8 @@ const Home = (props) => {
 							style={{
 								...button.default,
 								marginRight: '32px',
-							}}>
+							}}
+							>
 							Get started
 						</Button>
 						<Button type='btnIcon'>
