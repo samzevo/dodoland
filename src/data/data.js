@@ -95,4 +95,20 @@ export const Cards=[
 		src:Bird8,
 		Name:'Birds',
 	},
+	{
+		id:9,
+		src:Bird6,
+		Name:'Birds',
+	},
+	{
+		id:10,
+		src:Bird7,
+		Name:'Birds',
+	},
+	{
+		id:11,
+		src:Bird8,
+		Name:'Birds',
+	},
+	
 ]

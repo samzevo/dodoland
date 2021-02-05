@@ -1,5 +1,5 @@
 .card{
-    background-color: white;
+    background-color: transparent;
     width:25%;
     height: 220px;
   }
@@ -17,9 +17,6 @@
     color: black;
     font-family: 'Poppins';
     font-weight: bold;
-  }
-  .slick-slide{
-      margin: 0  0 0;
   }
 .slick-arrow.slick-prev::before{
     position: absolute;
@@ -50,10 +47,12 @@
 
 .birdsSectionTwo .leftBlock{
     height: 160px;
-    background-image: url(../../assets/images/birds1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width:100%;
+}
+.birdsSectionTwo .leftBlock img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 
@@ -61,4 +60,18 @@
     padding: 10px 0 0 20px;
     display: flex;
     flex-direction: column;
+}
+
+
+@media only screen and (max-width:1024px) {
+  .birdsCardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width:780px) {
+  .birdsCardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
 }

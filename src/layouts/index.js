@@ -5,5 +5,6 @@ import Section from './section'
 import Tab from './tab'
 import Container from './container'
 import Block from './block'
+import Card from './card'
 
-export { Row, Column, Container, Backdrop, Section, Tab, Block }
+export { Row, Column, Container, Backdrop, Section, Tab, Block , Card }
