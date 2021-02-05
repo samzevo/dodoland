@@ -22,40 +22,10 @@ const ethEnabled = () => {
   }
   return false;
 }
-// async function ethEnabled() {
-// 	const accounts = await ethereum.enable();
-// 	const account = accounts[0];
-// 	// do something with new account here
-//   }
-  
-//   ethereum.on('accountsChanged', function (accounts) {
-// 	getAccount();
-//   })
-
-// let ethenable=new Promise(function(myResovle,myReject)){
-// 	if(ethEnabled == true){
-// 		const accounts=await ethereum.request({method:'eth_requestAccounts'});
-// 		const account=accounts[0];
-// 		value=account;
-// 	}
-// }
 
 
 
-//   const getAccounts =() =>{
-// 	  if(ethEnabled == true){
-// 		  var accounts=ethereum.request({method:'eth_requestAccounts'});
-// 		  var account=accounts[0];
-// 		  console.log(account);
-// 	  }
-//   }
 
-
-
-	// const Web3 = require("web3");
-	// const connectwallet = () => {  
-		
-	// }
 
 	const connect = async() =>{
 		if (window.ethereum) {   
