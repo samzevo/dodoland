@@ -1,4 +1,23 @@
+/* importing fonts --typography */
+
 @font-face {
-    font-family: 'Larsseit';
-    src: local('Larsseit'), url(./assets/fonts/Larsseit-Regular.ttf) format('truetype');
-  }
+	font-family: 'Larsseit';
+	src: url(./assets/fonts/Larsseit-Regular.ttf);
+	font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Larsseit', sans-serif;
+}
+
+body{
+  padding-top: 70px;
+}
+
+#link{
+  color: #fff;
+  text-decoration: none;
+}

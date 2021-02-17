@@ -1,36 +1,36 @@
 import React from 'react'
-import { button } from '../styles/sheets/components'
+import '../styles/components/button.css'
 
 
 function Button(props) {
-	
-	const renderPrimarybutton=<button
-	href={props.href}
-	value={props.value}
-	style={props.style ? props.style : button.default}
-	type={props.type}
-	onClick={props.onClick}
-	>
-	{props.children}
-	
+
+const renderPrimarybutton=<button
+href={props.href}
+value={props.value}
+type={props.type}
+onClick={props.onClick}
+className="button-default"
+>
+{props.children}
+
     </button>
 
-	const renderButtonIcon=<button
-	href={props.href}
-	type={props.type}
-	style={props.style ? props.style : button.icon}
-	onClick={props.onClick}
-	>
-		
-	{props.children}
-	</button>
-	return (
-		<div>
-			{props.type === "primary" && renderPrimarybutton}
-			{props.type ==="btnIcon" && renderButtonIcon}
-		</div>
-		
-	)
+const renderButtonIcon=<button
+href={props.href}
+type={props.type}
+onClick={props.onClick}
+className="button-icon"
+>
+
+{props.children}
+</button>
+return (
+<div>
+{props.variant === "primary" && renderPrimarybutton}
+{props.variant ==="btnIcon" && renderButtonIcon}
+</div>
+
+)
 }
 
 export default Button

@@ -1,0 +1,50 @@
+.hero-button{
+    margin-top: 32px;
+    display: flex;
+    grid-column-gap: 32px;
+}
+
+.hero .title{
+    font-size: 50px;
+}
+
+.hero .sub-title{
+    font-size: 22px;
+}
+
+.hero .sub-title .span{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .hero{
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .hero{
+        display: grid;
+        place-items: center;
+    }
+    .hero .title{
+        font-size: 28px;
+        margin-top: 24px;
+    }
+    .hero .sub-title{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .hero .sub-title .span{
+        font-size: 18px;
+    }
+    .hero-button{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 16px;
+    }
+}
