@@ -1,0 +1,28 @@
+.button-default{
+    min-width: 140px;
+    background-color: white;
+    color: #570A7B;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 38px;
+}        
+
+.button-icon{
+    position: relative;
+    min-width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    background-color: white;
+    color: #570A7B;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}

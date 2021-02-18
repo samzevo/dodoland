@@ -1,0 +1,29 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 70%;
+	background-color: white;
+	box-shadow: 0px 3.3011px 19.2854px rgba(36, 137, 255, 0.0709935),
+		0px 1.30526px 7.62546px rgba(36, 137, 255, 0.0496029);
+	z-index: 1;
+	transition: 0.3s linear;
+}
+
+.nav-menu-sidebar {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(5, 40px);
+	grid-gap: 36px;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	top: 15%;
+	list-style: none;
+}
+
+.nav-menu-sidebar li {
+	font-size: 24;
+	cursor: pointer;
+}

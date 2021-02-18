@@ -1,24 +1,20 @@
-import { Colors } from './index'
+import  Colors  from './colors'
 
 export default function Typography(props, category) {
 	const styles = {
 		textDefault: {
 			color: props.color ? props.color : Colors.accent.primary,
 			fontSize: '16px',
-			margin: '0px',
 			...props.style,
 		},
 		textMedium: {
 			color: props.color ? props.color : Colors.white,
-			fontSize: '22px',
-			margin: '0px',
 			fontWeight: '100',
 			...props.style,
 		},
 		textLarge: {
 			color: props.color ? props.color : Colors.white,
 			fontSize: '50px',
-			margin: '0px',
 			fontWeight: '600',
 			...props.style,
 		},
@@ -26,15 +22,12 @@ export default function Typography(props, category) {
 			color: props.color ? props.color : Colors.accent.primary,
 			fontSize: '22px',
 			fontWeight:'bold',
-			margin: '0px',
 			...props.style,
 		},
 		titleLarge: {
 			color: props.color ? props.color : Colors.white,
-			fontSize: '3rem',
 			fontWeight:'bold',
 			textShadow:"1px 1px 3px black",
-			margin: '0px',
 			...props.style,
 		},
 		titleMedium: {

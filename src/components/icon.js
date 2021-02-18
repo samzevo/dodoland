@@ -1,11 +1,18 @@
 import React from 'react'
 
-function Icon(props){
+const Icon = (props) => {
 
-    return <img  src={props.src}
-    style={props.style}
-    onClick={props.onClick}
-    alt="icon"/>
+    const Styles={
+        default:{
+            cursor:'pointer',
+            ...props.style
+        }
+    }
+    return (
+        <>
+            <img src={props.src} alt="icon" width={props.width} height={props.height} style={Styles.default}/>
+        </>
+    )
 }
 
 export default Icon

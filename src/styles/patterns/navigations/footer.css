@@ -1,0 +1,25 @@
+.footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+}
+
+.footer .icons{
+    display: flex;
+}
+
+.footer .icons img{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+@media screen and (max-width:576px) {
+    .footer .icons img{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+} 
