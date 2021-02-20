@@ -4,36 +4,49 @@ import React from 'react'
 import '../../styles/patterns/navigations/sidebar.css'
 
 //importing components
-import { Link } from '../../components/'
+import { Link,Icon } from '../../components/'
+
+import close from '../../assets/icons/close.svg'
 
 const Sidebar = ({toggle}) => {
 	return (
 		<div className='sidebar'>
+			<span className="close" onClick={toggle}><Icon src={close} /></span>
 			<ul className='nav-menu-sidebar' onClick={toggle}>
 				<Link
 					name='Home'
 					path='/'
-					style={{ textDecoration: 'none' }}
+					style={{ textDecoration: 'none',color:'black' }}
 				/>
 				<Link
-					name='Products'
-					path='/products'
-					style={{ textDecoration: 'none' }}
+					name='Birds'
+					path='/birds'
+					style={{ textDecoration: 'none',color:'black' }}
 				/>
 				<Link
-					name='Resources'
-					path='/resources'
-					style={{ textDecoration: 'none' }}
+					name='Shop'
+					path='/shop'
+					style={{ textDecoration: 'none',color:'black' }}
 				/>
 				<Link
-					name='Pricings'
-					path='/pricings'
-					style={{ textDecoration: 'none' }}
+					name='Nesting'
+					path='/nesting'
+					style={{ textDecoration: 'none',color:'black' }}
 				/>
 				<Link
-					name='Schedule'
-					path='/schedule'
-					style={{ textDecoration: 'none' }}
+					name='Earn'
+					path='/earn'
+					style={{ textDecoration: 'none',color:'black' }}
+				/>
+				<Link
+					name='Feeding'
+					path='/feeding'
+					style={{ textDecoration: 'none',color:'black' }}
+				/>
+				<Link
+					name='Upcoming'
+					path='/upcoming'
+					style={{ textDecoration: 'none',color:'black' }}
 				/>
 			</ul>
 		</div>

@@ -1,0 +1,130 @@
+::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: 50px auto;
+    position: relative;
+    width: 70vw;
+    height: 350px;
+    background: #f1f1f1;
+    margin: 20px auto 0;
+    word-break: break-all;
+    border-radius: 20px;
+  }
+  
+  .bloc-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tabs { 
+    padding: 15px;
+    text-align: center;
+    width: auto;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    font-size: 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #323232;
+  }
+  
+  .active-tabs  {
+    background: white;
+    border-bottom: 1px solid transparent;
+    color: black;
+  }
+  
+  /* .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    background: rgb(88, 147, 241);
+  } */
+  
+  
+  
+  span {
+    border: none;
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+  .content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 20px;
+  }
+
+  .active-content {
+    display: block;
+  }
+  
+.bird-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.bird-container .block-right{
+    padding-top: 144px;
+}
+
+.bird-container .block-right input{
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.bird-container .block-right button{
+    margin-top: 16px;
+}
+
+
+@media only screen and (max-width:992px) {
+    .bird-container .block-right{
+        padding-top: 130px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .active-content{
+        padding: 10px 20px;
+    }
+    .bird-container{
+        grid-template-columns: 1fr;
+    }
+    .bird-container img{
+        width: 160px;
+        height: 160px;
+    }
+    .bird-container .block-right{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .container{
+        width: 80vw;
+    }
+}

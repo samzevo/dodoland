@@ -25,7 +25,7 @@ const Header = () => {
 
     const renderLinks=(
         <div className="nav-links">
-               <Link name="Home" path="/home" />
+               <Link name="Home" path="/" />
                <Link name="Birds" path="/birds" />
                <Link name="Shop" path="/shop" />
                <Link name="Nesting" path="/nesting" />
