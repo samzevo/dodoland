@@ -1,10 +1,10 @@
 .button-default{
     min-width: 140px;
-    background-color: white;
+    background-color: transparent;
     color: #570A7B;
     padding-left: 32px;
     padding-right: 32px;
-    border: none;
+    border:2px solid #570A7B;
     border-radius: 5px;
     font-size: 14px;
     height: 38px;
@@ -17,14 +17,14 @@
     justify-content: center;
     align-items: center;
     height: 38px;
-    background-color: white;
+    border:2px solid #570A7B;
     color: #570A7B;
     padding-left: 32px;
     padding-right: 32px;
-    border: none;
     border-radius: 5px;
     font-size: 14px;
     white-space: nowrap;
+    background-color: transparent;
 }
 
 .button-secondary{
@@ -42,27 +42,29 @@
 .button-icon:hover::before {
     content: '';
     position: absolute;
-    top: -4px;
-    left: -8px;
+    top: 3px;
+    left: 6px;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 90%;
+    height: 110%;
     border-radius: 5px;
-    border: 2px solid#570A7B;
+    background-color: white;
     cursor:pointer;
+    z-index: -1;
 }
 
 .button-default:hover::before {
     content: '';
     position: absolute;
-    top: -5px;
-    left: -8px;
+    top: 3px;
+    left: 6px;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 90%;
+    height: 110%;
     border-radius: 5px;
-    border: 2px solid#570A7B;
+    background-color: white;
     cursor:pointer;
+    z-index: -1;
 }

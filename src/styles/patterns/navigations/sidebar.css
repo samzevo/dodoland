@@ -3,7 +3,7 @@
 	top: 0;
 	right: 0;
 	height: 100%;
-	width: 70%;
+	width: 50%;
 	background-color: white;
 	box-shadow: 0px 3.3011px 19.2854px rgba(36, 137, 255, 0.0709935),
 		0px 1.30526px 7.62546px rgba(36, 137, 255, 0.0496029);
@@ -31,6 +31,6 @@
 
 .sidebar .close{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
 }
