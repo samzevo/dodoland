@@ -10,7 +10,7 @@ import guide from '../../assets/icons/guide.svg'
 const Hero = () => {
     return (
         <div className="hero">
-            <Text category="title" type="titleLarge" className="title">WELCOME TO BIRDLY</Text>
+            <Text category="title" type="titleLarge" className="title" style={{letterSpacing:'0.1em',color:'#570a7b'}}>Welcome to birdly</Text>
             <Text  type="textMedium" className="sub-title">collect and breed your birds forever and ever</Text>
             <Text type="textMedium"  className="sub-title"><span className="span">16.8k Birds</span> burned through fees</Text>
             <div className="hero-button">

@@ -27,7 +27,6 @@ export default function Typography(props, category) {
 		titleLarge: {
 			color: props.color ? props.color : Colors.white,
 			fontWeight:'bold',
-			textShadow:"1px 1px 3px black",
 			...props.style,
 		},
 		titleMedium: {
