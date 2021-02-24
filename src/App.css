@@ -44,14 +44,67 @@
 .header .content .subtext{
     font-size: 50px;
     position: absolute;
-    left: -200%;
+    left: 0%;
     bottom: 15%;
-    text-shadow: 1px 1px 5px red;
     white-space: nowrap;
+    z-index: 2;
 }
 
 .section-two{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    position: relative;
+    z-index: 1000;
+    margin-top: -10%;
+    background: linear-gradient(to top,#151515,transparent);
+}
+
+.section-two-image{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -10%;
+    left: 0;
+
+}
+
+.section-three{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.section-three-image{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -50%;
+    left: 0;
+}
+
+.egg-btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.egg-btn button{
+    width: 80px;
+    height: 35px;
+    background: linear-gradient(338.97deg, #B4EF4F 42.89%, rgba(255, 255, 255, 0.4) 172.25%, #FFF06A 172.25%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.egg-btn button::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(338.97deg, #88BC2F 42.89%, rgba(255, 255, 255, 0.4) 172.25%, #FFF06A 172.25%);
+    border-radius: 5px;
 }
